@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  background-color: #0c0c0c;
+  font-family: "Kanit", sans-serif;
+  min-height: 100%;
+}
+
+.sticky-card {
+  top: calc(6rem + var(--stack-index, 0px));
+}
+
+@media (min-width: 768px) {
+  .sticky-card {
+    top: calc(8rem + var(--stack-index, 0px));
+  }
+}

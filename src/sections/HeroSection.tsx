@@ -11,10 +11,10 @@ const navLinks = [
 
 export function HeroSection() {
   return (
-    <section className="relative flex h-screen min-h-0 flex-col overflow-x-clip">
+    <section className="relative flex min-h-[100dvh] flex-col overflow-x-clip md:h-screen md:min-h-0">
       <FadeIn
         as="nav"
-        className="relative z-30 flex justify-between px-6 pt-6 md:px-10 md:pt-8"
+        className="relative z-30 grid grid-cols-4 items-center gap-1 px-4 pt-5 sm:gap-2 sm:px-6 sm:pt-6 md:flex md:justify-between md:px-10 md:pt-8"
         delay={0}
         duration={0.7}
         x={0}
@@ -24,17 +24,17 @@ export function HeroSection() {
           <a
             key={link.href}
             href={link.href}
-            className="text-sm font-medium uppercase tracking-wider text-[#D7E2EA] transition-opacity duration-200 hover:opacity-70 md:text-lg lg:text-[1.4rem]"
+            className="text-center text-[0.65rem] font-medium uppercase tracking-wide text-[#D7E2EA] transition-opacity duration-200 hover:opacity-70 sm:text-sm md:text-left md:text-lg lg:text-[1.4rem]"
           >
             {link.label}
           </a>
         ))}
       </FadeIn>
 
-      <div className="relative flex min-h-0 flex-1 flex-col overflow-hidden">
-        <div className="overflow-visible px-6 md:px-10">
+      <div className="relative flex flex-1 flex-col gap-6 overflow-hidden px-4 pb-10 pt-2 sm:gap-8 sm:px-6 sm:pb-12 md:min-h-0 md:gap-0 md:px-0 md:pb-0 md:pt-0">
+        <div className="overflow-visible md:px-10">
           <FadeIn delay={0.15} duration={0.7} x={0} y={40}>
-            <h1 className="hero-heading mt-4 w-full whitespace-nowrap font-black uppercase leading-none tracking-tight text-[#D7E2EA] text-[8.5vw] sm:mt-5 sm:text-[9.5vw] md:mt-6 md:text-[10.5vw] lg:text-[11.5vw]">
+            <h1 className="hero-heading mt-2 w-full text-center font-black uppercase leading-[0.95] tracking-tight text-[#D7E2EA] text-[clamp(1.75rem,8.5vw,3.25rem)] sm:mt-4 sm:leading-none md:mt-6 md:text-left md:text-[10.5vw] md:whitespace-nowrap lg:text-[11.5vw]">
               Hi, i&apos;m <span className="hero-name-3d">Dharan</span>
             </h1>
           </FadeIn>
@@ -45,21 +45,18 @@ export function HeroSection() {
           duration={0.9}
           x={0}
           y={24}
-          className="absolute left-[calc(50%+10px)] top-1/2 z-10 -translate-x-1/2 -translate-y-1/2 sm:bottom-0 sm:top-auto sm:translate-y-0 md:left-[calc(50%+14px)]"
+          className="relative z-10 flex shrink-0 justify-center md:absolute md:left-[calc(50%+14px)] md:top-1/2 md:-translate-x-1/2 md:-translate-y-1/2"
         >
-          <LofiHeroScene
-            src={HERO_LOFI_SCENE_URL}
-            alt="Lofi coding scene"
-          />
+          <LofiHeroScene src={HERO_LOFI_SCENE_URL} alt="Lofi coding scene" />
         </FadeIn>
 
-        <div className="relative z-20 mt-auto mb-14 px-6 sm:mb-20 sm:px-8 md:mb-24 md:px-10 lg:mb-28">
+        <div className="relative z-20 mt-auto md:mb-24 md:px-10 lg:mb-28">
           <FadeIn
             delay={0.35}
             duration={0.7}
             x={0}
             y={20}
-            className="hero-intro-text min-w-0 max-w-[min(100%,19rem)] space-y-3 sm:max-w-sm sm:space-y-3.5 md:max-w-md"
+            className="hero-intro-text mx-auto min-w-0 max-w-md space-y-3 text-center text-white sm:space-y-3.5 md:mx-0 md:max-w-md md:text-left"
           >
             <p className="m-0">
               Full Stack Developer specialized in building fast, responsive, and{" "}

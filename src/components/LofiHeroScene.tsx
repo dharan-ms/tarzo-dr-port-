@@ -23,7 +23,7 @@ export function LofiHeroScene({ src, alt }: LofiHeroSceneProps) {
       }}
     >
       <motion.div
-        className="relative h-[min(62vw,245px)] w-[min(62vw,245px)] overflow-hidden rounded-full sm:h-[300px] sm:w-[300px] md:h-[365px] md:w-[365px] lg:h-[430px] lg:w-[430px]"
+        className="relative h-[min(52vw,200px)] w-[min(52vw,200px)] overflow-hidden rounded-full sm:h-[280px] sm:w-[280px] md:h-[365px] md:w-[365px] lg:h-[430px] lg:w-[430px]"
         style={{
           boxShadow:
             "0 0 0 2px rgba(255,255,255,0.9), 0 8px 32px rgba(181, 1, 167, 0.25)",

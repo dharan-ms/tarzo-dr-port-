@@ -45,11 +45,11 @@ body,
 }
 
 .hero-intro-text {
-  font-family: "Questa Grande", "Questa", Georgia, "Times New Roman", serif;
-  font-size: clamp(0.8rem, 1.5vw, 1.05rem);
+  font-family: "Unigeo64 Trial", "Unigeo", ui-sans-serif, system-ui, sans-serif;
+  font-size: clamp(0.95rem, 2.9vw, 1.15rem);
   font-weight: 400;
-  line-height: 1.75;
-  letter-spacing: 0.012em;
+  line-height: 1.65;
+  letter-spacing: 0.01em;
   color: #ffffff;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -57,27 +57,28 @@ body,
 
 .hero-intro-text p {
   margin: 0;
+  color: #ffffff;
 }
 
 .hero-intro-accent {
-  font-weight: 400;
-  letter-spacing: 0.012em;
+  font-weight: 500;
+  letter-spacing: 0.01em;
 }
 
 .hero-intro-accent--cyan {
-  color: #93e5ff;
+  color: #b8f4ff;
 }
 
 .hero-intro-accent--purple {
-  color: #d4c4ff;
+  color: #e4d4ff;
 }
 
 .hero-intro-accent--pink {
-  color: #fbb6d9;
+  color: #ffc8e8;
 }
 
 .hero-intro-accent--amber {
-  color: #ffc98a;
+  color: #ffdba8;
 }
 
 .hero-name-3d {

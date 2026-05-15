@@ -9,7 +9,7 @@ import { ContactSection } from "./sections/ContactSection";
 export default function App() {
   return (
     <div className="mx-auto min-h-screen w-full min-w-0 overflow-x-clip bg-[#0C0C0C] text-[#D7E2EA]">
-      <MusicButton className="fixed right-6 top-16 z-50 sm:right-8 sm:top-20 md:top-24" />
+      <MusicButton className="fixed right-4 top-[4.75rem] z-50 sm:right-6 sm:top-20 md:right-8 md:top-24" />
       <HeroSection />
       <MarqueeSection />
       <AboutSection />

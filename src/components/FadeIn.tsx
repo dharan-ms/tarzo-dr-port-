@@ -28,7 +28,7 @@ export function FadeIn<T extends ElementType = "div">({
       className={className}
       initial={{ opacity: 0, x, y }}
       whileInView={{ opacity: 1, x: 0, y: 0 }}
-      viewport={{ once: true, margin: "50px", amount: 0 }}
+      viewport={{ once: true, margin: "0px", amount: 0.2 }}
       transition={{
         delay,
         duration,

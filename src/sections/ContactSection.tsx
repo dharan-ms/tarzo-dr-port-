@@ -1,42 +1,45 @@
 import { ArrowUpRight } from "lucide-react";
 import { FadeIn } from "../components/FadeIn";
 
-/** Simple Icons SVGs via jsDelivr (LinkedIn is not served on cdn.simpleicons.org). */
-const SI = "https://cdn.jsdelivr.net/npm/simple-icons@11.6.0/icons";
-
 const contactLinks = [
   {
     label: "GitHub",
     href: "https://github.com/dharan-ms",
-    logoUrl: `${SI}/github.svg`,
+    logoUrl: "https://cdn.simpleicons.org/github/ffffff",
     logoAlt: "GitHub",
     bar: "from-[#24292f] to-[#6e40c9]",
     ring: "hover:border-white/[0.14] hover:shadow-[0_20px_50px_-28px_rgba(0,0,0,0.65)]",
+    iconBg: "bg-[#24292f]",
   },
   {
     label: "X",
     href: "https://x.com/shan_dharan",
-    logoUrl: `${SI}/x.svg`,
+    logoUrl: "https://cdn.simpleicons.org/x/ffffff",
     logoAlt: "X",
     bar: "from-zinc-900 to-zinc-600",
     ring: "hover:border-white/[0.14] hover:shadow-[0_20px_50px_-28px_rgba(0,0,0,0.55)]",
+    iconBg: "bg-black",
   },
   {
     label: "LinkedIn",
     href: "https://www.linkedin.com/in/dharanesh-raj-028142384/",
-    logoUrl: `${SI}/linkedin.svg`,
+    logoUrl: "/icons/linkedin.png",
     logoAlt: "LinkedIn",
     bar: "from-[#0a66c2] to-[#004182]",
     ring: "hover:border-[#0a66c2]/25 hover:shadow-[0_20px_50px_-28px_rgba(10,102,194,0.25)]",
+    iconBg: "bg-black",
+    iconRound: true,
   },
   {
     label: "Email",
     href: "mailto:dharanesh.rajms@gmail.com",
     email: "dharanesh.rajms@gmail.com",
-    logoUrl: `${SI}/gmail.svg`,
+    logoUrl:
+      "https://upload.wikimedia.org/wikipedia/commons/7/7e/Gmail_icon_%282020%29.svg",
     logoAlt: "Gmail",
     bar: "from-[#ea4335] to-[#fbbc04]",
     ring: "hover:border-[#ea4335]/20 hover:shadow-[0_20px_50px_-28px_rgba(234,67,53,0.2)]",
+    iconBg: "bg-white",
   },
 ] as const;
 
@@ -101,13 +104,27 @@ export function ContactSection() {
                   aria-hidden
                 />
 
-                <span className="relative ml-1 flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-white shadow-[0_1px_0_rgba(255,255,255,0.9)_inset,0_8px_20px_-10px_rgba(0,0,0,0.4)] ring-1 ring-black/8 sm:ml-1.5 sm:h-14 sm:w-14 sm:rounded-[14px]">
+                <span
+                  className={`relative ml-1 flex h-12 w-12 shrink-0 items-center justify-center overflow-hidden shadow-lg ring-1 ring-white/10 sm:ml-1.5 sm:h-14 sm:w-14 ${
+                    "iconRound" in item && item.iconRound
+                      ? "rounded-full"
+                      : "rounded-xl sm:rounded-[14px]"
+                  } ${item.iconBg}`}
+                >
                   <img
                     src={item.logoUrl}
                     alt=""
                     width={40}
                     height={40}
-                    className="h-7 w-7 object-contain sm:h-8 sm:w-8"
+                    className={
+                      "iconRound" in item && item.iconRound
+                        ? "h-full w-full object-cover"
+                        : `object-contain ${
+                            item.label === "Email"
+                              ? "h-9 w-9 sm:h-10 sm:w-10"
+                              : "h-7 w-7 sm:h-8 sm:w-8"
+                          }`
+                    }
                     loading="lazy"
                     decoding="async"
                     referrerPolicy="no-referrer"
@@ -120,7 +137,7 @@ export function ContactSection() {
                       <span className="block text-[0.65rem] font-semibold uppercase tracking-[0.2em] text-[#D7E2EA]/50">
                         Email
                       </span>
-                      <span className="mt-1.5 block break-all bg-gradient-to-r from-amber-200 via-yellow-100 to-amber-100 bg-clip-text text-base font-semibold leading-snug text-transparent drop-shadow-[0_0_24px_rgba(253,224,71,0.45)] sm:text-lg">
+                      <span className="mt-1.5 block break-all text-base font-semibold leading-snug text-white sm:text-lg">
                         {item.email}
                       </span>
                     </>

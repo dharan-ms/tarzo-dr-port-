@@ -28,6 +28,10 @@ export const MARQUEE_ROW2 = [
 export const PORTRAIT_URL =
   "https://shrug-person-78902957.figma.site/_components/v2/d24c01ad3a56fc65e942a1f501eb73db42d7cf9a/Rectangle_40443.81459862.png";
 
+export const HERO_LOFI_SCENE_URL = "/hero-lofi-scene.png";
+
+export const BACKGROUND_MUSIC_URL = "/mornings-whisper.mp3";
+
 export const ABOUT_DECOR = {
   moon: "https://shrug-person-78902957.figma.site/_components/v2/ebb2b8f25d8e24d5f0a5ca8af4c950de81aa2fd7/moon_icon.11395d36.png",
   objectLeft:

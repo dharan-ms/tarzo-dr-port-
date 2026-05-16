@@ -31,6 +31,16 @@ const contactLinks = [
     iconRound: true,
   },
   {
+    label: "Hire me",
+    href: "https://www.dharanesh.xyz/",
+    logoUrl: "/icons/hire-me.png",
+    logoAlt: "Hire me",
+    bar: "from-[#dc2626] to-[#f87171]",
+    ring: "hover:border-red-500/25 hover:shadow-[0_20px_50px_-28px_rgba(239,68,68,0.25)]",
+    iconBg: "bg-black",
+    iconRound: true,
+  },
+  {
     label: "Email",
     href: "mailto:dharanesh.rajms@gmail.com",
     email: "dharanesh.rajms@gmail.com",

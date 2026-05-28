@@ -88,4 +88,22 @@ export const PROJECTS: ProjectData[] = [
     col2:
       "https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_38xzZboKViGWJOttwIXH07lWA1P%2Fhf_20260412_055818_9d062121-ad7e-46b9-999a-1a6a692ef1ee.png&w=1280&q=85",
   },
+  {
+    number: "04",
+    category: "Personal",
+    name: "Type Writing",
+    url: "https://type-daw.netlify.app/",
+    col1a: "/projects/type-writing/col1a-4k.png",
+    col1b: "/projects/type-writing/col1b-4k.png",
+    col2: "/projects/type-writing/col2-4k.png",
+  },
+  {
+    number: "05",
+    category: "Personal",
+    name: "Study Script",
+    url: "https://study-script.vercel.app/",
+    col1a: "/projects/study-script/col1a-4k.png",
+    col1b: "/projects/study-script/col1b-4k.png",
+    col2: "/projects/study-script/col2-4k.png",
+  },
 ];

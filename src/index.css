@@ -86,21 +86,21 @@ body,
   background: linear-gradient(
     125deg,
     #ffffff 0%,
-    #7dd3fc 16%,
-    #a78bfa 38%,
-    #e879f9 55%,
-    #f472b6 72%,
-    #fb923c 88%,
-    #fde68a 100%
+    #fecaca 16%,
+    #f87171 32%,
+    #ef4444 48%,
+    #dc2626 64%,
+    #b91c1c 82%,
+    #fca5a5 100%
   );
   background-size: 220% auto;
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.2);
-  filter: drop-shadow(0 2px 0 #7c3aed) drop-shadow(0 5px 0 #5b21b6)
+  -webkit-text-stroke: 1px rgba(255, 200, 200, 0.22);
+  filter: drop-shadow(0 2px 0 #b91c1c) drop-shadow(0 5px 0 #7f1d1d)
     drop-shadow(0 9px 18px rgba(0, 0, 0, 0.55))
-    drop-shadow(0 0 42px rgba(182, 0, 168, 0.45));
+    drop-shadow(0 0 42px rgba(220, 38, 38, 0.45));
   animation: hero-name-shine 7s ease-in-out infinite;
 }
 
